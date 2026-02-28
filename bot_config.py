@@ -12,7 +12,7 @@ BOT_AGE = 21
 BOT_GENDER = "female"
 
 # Configuration
-TELEGRAM_TOKEN = "your telegram bot token here"
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN", "YOUR_BOT_TOKEN_HERE")
 OLLAMA_URL = os.getenv("OLLAMA_URL", "http://localhost:11434/api/chat")
 MODEL_NAME = os.getenv("MODEL_NAME", "qwen2.5")
 
